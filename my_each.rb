@@ -1,8 +1,9 @@
-require 'pry'
-def my_each (array)
+def my_each (words)
   i = 0
-   while i < array
-array do |word|
-    end
+  while i < words.length
+    yield(words[i])
+    i+=1
+
   end
+  words
 end
